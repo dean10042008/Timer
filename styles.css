@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, rgb(15, 23, 42), rgb(30, 58, 138), rgb(15, 23, 42));
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 40px;
+
+        article:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            gap: 14px;
+            border-radius: 999px;
+            border: 2px solid rgb(255 255 255 / 0.2);
+            padding: 64px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(16px);
+
+            p:nth-child(1) {
+                font-size: 96px;
+                font-family: "Monospace", monospace;
+            }
+
+            p:nth-child(2) {
+                font-size: 14px;
+                text-transform: uppercase;
+                color: rgb(191, 219, 254);
+                letter-spacing: 3px;
+            }
+        }
+
+        article:nth-child(2) {
+            display: flex;
+            gap: 35px;
+
+            button {
+                padding: 16px 32px;
+                border: none;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+                transition: transform 0.2s linear, background 0.2s linear;
+                border-radius: 12px;
+                font-weight: 600;
+                display: flex;
+                gap: 10px;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                &:nth-child(1) {
+                    background: #ef4444;
+
+                    &:hover {
+                        background: #dc2626;
+                    }
+                }
+
+                &:nth-child(2) {
+                    background: #22c55e;
+
+                    &:hover {
+                        background: #16a34a;
+                    }
+                }
+
+                &:nth-child(3) {
+                    background: #2563eb;
+
+                    &:hover {
+                        background: #1d4ed8;
+                    }
+                }
+            }
+        }
+
+        article:nth-child(3) {
+            display: flex;
+            gap: 45px;
+
+            div {  
+                border: 2px solid rgb(255 255 255 / 0.2);
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(16px);
+                padding: 12px 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+
+                p {
+                    font-size: 24px;
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                h5 {
+                    color: rgb(191, 219, 254);
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
